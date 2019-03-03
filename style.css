@@ -1,0 +1,84 @@
+body {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.panels {
+    margin: 5% 0;
+    min-height: 762px;
+    overflow: hidden;
+    display: flex;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.panel {
+    background: #6b0f9c;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+        background 0.2s;
+    font-size: 40px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.panel > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel > *:first-child {
+    transform: translateY(-100%);
+}
+
+.panel.open-active > *:first-child {
+    transform: translateY(0);
+    transition-duration: 1s;
+}
+
+.panel > *:last-child {
+    transform: translateY(100%);
+}
+
+.panel.open-active > *:last-child {
+    transform: translateY(0);
+    transition-duration: 1s;
+}
+
+.panel.open {
+    flex: 5;
+    font-size: 80px;
+}
+
+
+.panel1 {
+    background: url('https://images.unsplash.com/photo-1535916707207-35f97e715e1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+}
+
+.panel2 {
+    background: url('https://images.unsplash.com/photo-1464757494038-157e877f60d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+}
+
+.panel3 {
+    background: url('https://images.unsplash.com/photo-1420802839049-174a867e426c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+}
+
+.panel4 {
+    background: url('https://images.unsplash.com/photo-1483102717009-4d971f9add95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+.panel5 {
+    background: url('https://images.unsplash.com/photo-1505487057090-d9d85e45f74c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}

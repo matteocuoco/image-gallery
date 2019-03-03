@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <title>Flex Panel Image Gallery with Javascript</title>
+</head>
+<body>
+    <div class="panels">
+        <div class="panel panel1">
+            <p>Hope</p>
+            <p>Imagination</p>
+            <p>Love</p>
+        </div>
+        <div class="panel panel2">
+            <p>Life</p>
+            <p>Is</p>
+            <p>Strange</p>
+        </div>
+        <div class="panel panel3">
+            <p>Be</p>
+            <p>Greater</p>
+            <p>Than</p>
+        </div>
+        <div class="panel panel4">
+            <p>More</p>
+            <p>Than</p>
+            <p>Words</p>
+        </div>
+        <div class="panel panel5">
+            <p>Every</p>
+            <p>Detail</p>
+            <p>Matters</p>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+        
+        const panels = document.querySelectorAll('.panel');
+
+        function addOpen() {
+            this.classList.add('open');
+        }
+
+        function removeOpen() {
+            this.classList.remove('open');
+        }
+
+        function addOpenActive() {
+                this.classList.add('open-active');
+        }
+
+        function removeOpenActive() {
+                this.classList.remove('open-active');
+        }
+
+        panels.forEach( panel => panel.addEventListener('mouseover', addOpen));
+        panels.forEach( panel => panel.addEventListener('mouseout', removeOpen));
+        panels.forEach( panel => panel.addEventListener('mouseover', addOpenActive));
+        panels.forEach( panel => panel.addEventListener('mouseout', removeOpenActive));
+
+    </script>
+
+</body>
+</html>
